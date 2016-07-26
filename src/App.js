@@ -4,8 +4,8 @@ import ReactFireMixin from 'reactfire';
 import reactMixin from 'react-mixin';
 import Form from './Form.js';
 import Directory from './Directory.js';
-import logo from './BozemanJS.png';
-import './App.css';
+import logo from './images/BozemanJS.png';
+import './css/app.css';
 
 class App extends Component {
   constructor (props, context) {

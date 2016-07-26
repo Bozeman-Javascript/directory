@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Firebase from 'firebase';
 import ReactFireMixin from 'reactfire';
 import reactMixin from 'react-mixin';
-import './App.css';
+import './css/form.css';
 
 class Form extends Component {
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/directory.css';
+//import './css/bozemanjs.css';
 
 class Directory extends Component {
   render() {
@@ -34,9 +35,9 @@ class Directory extends Component {
         return (
           <div key={key}>
             <div style={styles} className="bio-image" ></div>
-            <div><a href={user.id}>GIT</a></div>
-            <div><a href={user.stackoverflow}>SO</a></div>
-            <div><a href={user.linkedin}>IN</a></div>
+            <div><a class='icon-github' href={user.id}>GIT</a></div>
+            <div><a class='icon-stackoverflow' href={user.stackoverflow}>SO</a></div>
+            <div><a class='icon-linkedin' href={user.linkedin}>IN</a></div>
           </div>
         )
       } else {
