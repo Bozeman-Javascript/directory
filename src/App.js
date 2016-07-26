@@ -28,13 +28,18 @@ class App extends Component {
       , users = this.state.users || null;
 
       return (
-        <div className="App">
-          {this.renderLoginButton()}
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Bozeman Javascript Directory</h2>
+        <div className="app">
+
+          <div className="app-header">
+            <div className="app-header--left">
+              <img className="app-logo" src={logo} alt="logo" />
+            </div>
+            <div className="app-header--right">
+              {this.renderLoginButton()}
+              <Form user={user} />
+            </div>
           </div>
-          <Form user={user} />
+
           <Directory users={users} />
         </div>
       );
@@ -63,9 +68,12 @@ class App extends Component {
       // If the user doesn't exist, add them to the database
       queryUser.on("value", function(querySnapshot) {
         if (querySnapshot.numChildren() === 0) {
+
           Firebase.database().ref('users/' + user.uid).set({
             id: user.uid,
-            photoURL: user.photoURL
+            name: user.displayName,
+            photoURL: user.photoURL,
+            joinDate: new Date().getTime()
           });
         }
       });

@@ -2,15 +2,29 @@ body {
   font-family: Arial;
 }
 
-.App {
+.app {
 
 }
 
-.App-logo {
-  height: 80px;
+.app-header--left {
+  float: left;
+  width: 50%;
+  box-sizing: content-box;
 }
 
-.App-header {
-  height: 150px;
-  padding: 20px;
+.app-header--right {
+  float: right;
+  width: 50%;
+  box-sizing: content-box;
+}
+
+.app-header {
+  height: 220px;
+  display: block;
+  clear: both;
+}
+
+.app-logo {
+  width: 200px;
+  height: auto;
 }
