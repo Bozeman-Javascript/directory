@@ -35,6 +35,10 @@ Instead, it will copy all the configuration files and the transient dependencies
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run deploy`
+
+Pushes the `gh-pages` branch to Github to make the app available at https://bozeman-javascript.github.io/directory/.
+
 ### Post-Process CSS
 
 This project setup minifies your CSS and adds vendor prefixes to it automatically through [Autoprefixer](https://github.com/postcss/autoprefixer) so you don’t need to worry about it.
