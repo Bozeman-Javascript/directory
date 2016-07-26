@@ -1,42 +1,9 @@
-Below you will find some information on how to perform common tasks.  
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
+# Bozeman Javascript Directory
 
-## Sending Feedback
+A demo app built with [React](https://facebook.github.io/react/) and [Firebase](https://firebase.google.com/docs/). The app allows users to login, using github
+authentication, then update their social profile links.
 
-We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
-
-## Folder Structure
-
-After creation, you project should look like this:
-
-```
-my-app/
-  README.md
-  index.html
-  favicon.ico
-  node_modules/
-  package.json
-  src/
-    App.css
-    App.js
-    index.css
-    index.js
-    logo.svg
-```
-
-For the project to build, **these files must exist with exact filenames**:
-
-* `index.html` is the page template;
-* `favicon.ico` is the icon you see in the browser tab;
-* `src/index.js` is the JavaScript entry point.
-
-You can delete or rename the other files.
-
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.  
-You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
-
-You can, however, create more top-level directories.  
-They will not be included in the production build so you can use them for things like documentation.
+This project was built using the [Create React App](https://github.com/facebookincubator/create-react-app) repo.
 
 ## Available Scripts
 
@@ -67,88 +34,6 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transient dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## How To...
-
-### Import a Component
-
-This project setup supports ES6 modules thanks to Babel.  
-While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
-
-For example:
-
-### `Button.js`
-
-```js
-import React, { Component } from 'react';
-
-class Button extends Component {
-  render() {
-    // ...
-  }
-}
-
-export default Button; // Don’t forget to use export default!
-```
-
-### `DangerButton.js`
-
-```js
-import React, { Component } from 'react';
-import Button from './Button'; // Import a component from another file
-
-class DangerButton extends Component {
-  render() {
-    return <Button color='red' />;
-  }
-}
-
-export default DangerButton;
-```
-
-Be aware of the [difference between default and named exports](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281). It is a common source of mistakes.
-
-We suggest that you stick to using default imports and exports when a module only exports a single thing (for example, a component). That’s what you get when you use `export default Button` and `import Button from './Button'`.
-
-Named exports are useful for utility modules that export several functions. A module may have at most one default export and as many named exports as you like.
-
-Learn more about ES6 modules:
-
-* [When to use the curly braces?](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281)
-* [Exploring ES6: Modules](http://exploringjs.com/es6/ch_modules.html)
-* [Understanding ES6: Modules](https://leanpub.com/understandinges6/read#leanpub-auto-encapsulating-code-with-modules)
-
-### Add a Stylesheet
-
-This project setup uses [Webpack](https://webpack.github.io/) for handling all assets. Webpack offers a custom way of “extending” the concept of `import` beyond JavaScript. To express that a JavaScript file depends on a CSS file, you need to **import the CSS from the JavaScript file**:
-
-#### `Button.css`
-
-```css
-.Button {
-  padding: 20px;
-}
-```
-
-#### `Button.js`
-
-```js
-import React, { Component } from 'react';
-import './Button.css'; // Tell Webpack that Button.js uses these styles
-
-class Button extends Component {
-  render() {
-    // You can use them as regular CSS styles
-    return <div className='Button' />;
-  }
-}
-```
-
-**This is not required for React** but many people find this feature convenient. You can read about the benefits of this approach [here](https://medium.com/seek-ui-engineering/block-element-modifying-your-javascript-components-d7f99fcab52b). However you should be aware that this makes your code less portable to other build tools and environments than Webpack.
-
-In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all CSS files will be concatenated into a single minified `.css` file in the build output.
-
-If you are concerned about using Webpack-specific semantics, you can put all your CSS right into `src/index.css`. It would still be imported from `src/index.js`, but you could always remove that import if you later migrate to a different build tool.
 
 ### Post-Process CSS
 
@@ -218,63 +103,3 @@ Webpack finds all relative module references in CSS (they start with `./`) and r
 Please be advised that this is also a custom feature of Webpack.
 
 **It is not required for React** but many people enjoy it (and React Native uses a similar mechanism for images). However it may not be portable to some other environments, such as Node.js and Browserify. If you prefer to reference static assets in a more traditional way outside the module system, please let us know [in this issue](https://github.com/facebookincubator/create-react-app/issues/28), and we will consider support for this.
-
-### Adding Flow
-
-Flow typing is currently [not supported out of the box](https://github.com/facebookincubator/create-react-app/issues/72) with the default `.flowconfig` generated by Flow. If you run it, you might get errors like this:
-
-```
-node_modules/fbjs/lib/Deferred.js.flow:60
- 60:     Promise.prototype.done.apply(this._promise, arguments);
-                           ^^^^ property `done`. Property not found in
-495: declare class Promise<+R> {
-     ^ Promise. See lib: /private/tmp/flow/flowlib_34952d31/core.js:495
-
-node_modules/fbjs/lib/shallowEqual.js.flow:29
- 29:     return x !== 0 || 1 / (x: $FlowIssue) === 1 / (y: $FlowIssue);
-                                   ^^^^^^^^^^ identifier `$FlowIssue`. Could not resolve name
-
-src/App.js:3
-  3: import logo from './logo.svg';
-                      ^^^^^^^^^^^^ ./logo.svg. Required module not found
-
-src/App.js:4
-  4: import './App.css';
-            ^^^^^^^^^^^ ./App.css. Required module not found
-
-src/index.js:5
-  5: import './index.css';
-            ^^^^^^^^^^^^^ ./index.css. Required module not found
-```
-
-To fix this, change your `.flowconfig` to look like this:
-
-```
-[libs]
-./node_modules/fbjs/flow/lib
-
-[options]
-esproposal.class_static_fields=enable
-esproposal.class_instance_fields=enable
-
-module.name_mapper='^\(.*\)\.css$' -> 'react-scripts/config/flow/css'
-module.name_mapper='^\(.*\)\.\(jpg\|png\|gif\|eot\|svg\|ttf\|woff\|woff2\|mp4\|webm\)$' -> 'react-scripts/config/flow/file'
-
-suppress_type=$FlowIssue
-suppress_type=$FlowFixMe
-```
-
-Re-run flow, and you sholdn’t get any extra issues.
-
-If you later `eject`, you’ll need to replace `react-scripts` references with the `<PROJECT_ROOT>` placeholder, for example:
-
-```
-module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/config/flow/css'
-module.name_mapper='^\(.*\)\.\(jpg\|png\|gif\|eot\|svg\|ttf\|woff\|woff2\|mp4\|webm\)$' -> '<PROJECT_ROOT>/config/flow/file'
-```
-
-We will consider integrating more tightly with Flow in the future so that you don’t have to do this.
-
-### Something Missing?
-
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/template/README.md)
