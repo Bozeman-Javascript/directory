@@ -1,30 +1,57 @@
-body {
-  font-family: Arial;
-}
-
 .app {
-
+  height: 100%;
+  min-height: 100%;
 }
 
-.app-header--left {
-  float: left;
-  width: 50%;
-  box-sizing: content-box;
-}
-
-.app-header--right {
-  float: right;
-  width: 50%;
-  box-sizing: content-box;
-}
-
-.app-header {
-  height: 220px;
+.app-header--login{
+  position: fixed;
+  width: 100%;
+  background-color: #f9db3d;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding: 10px 0px 0px 0px;
   display: block;
+  top: 0;
+  z-index: 1000;
   clear: both;
 }
 
-.app-logo {
-  width: 200px;
-  height: auto;
+.app-header--login {
+  opacity: 1;
+}
+
+.app-intro {
+  padding: 100px 10px 0 10px;
+  margin: 0;
+  text-align: center;
+  white-space: normal;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+  .app-header {
+    transform: none;
+  }
+}
+
+.header-leave {
+  position: absolute;
+  top: 0;
+}
+
+.header-leave.header-leave-active {
+  top: -1000px;
+  transition: top 0.2s ease-in;
+}
+
+.header-enter {
+  width: 100%;
+  position: absolute;
+  top: -1000px;
+}
+
+.header-enter.header-enter-active {
+  position: absolute;
+  top: 0px;
+  transition: top 0.6s ease-out;
 }

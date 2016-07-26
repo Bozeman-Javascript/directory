@@ -1,0 +1,59 @@
+.button {
+  display: inline-block;
+  position: relative;
+  font-family: 'neutra_text_tfbold_sc_alt', Arial;
+  margin: 0 auto;
+  padding: 0;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  min-width: 200px;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  background-color: #2e2e2c;
+  color: #f9db3d;
+  transition: all 0.1s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #2e2e2c;
+  background-color: #ffffff;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background-color: #2e2e2c;
+  color: #ffffff;
+  outline: none;
+}
+
+.button > span {
+  font-size: 70%;
+  padding: 0 5px;
+  font-weight: normal;
+}
+
+.button > i {
+  font-size: 110%;
+  font-weight: normal;
+}
+
+.button--login {
+  margin: 0 auto 10px auto;
+  min-width: 140px;
+  display: block;
+}
+
+.button--update {
+  width: 100%;
+  max-width: none;
+  display: block;
+  box-sizing: border-box;
+}
