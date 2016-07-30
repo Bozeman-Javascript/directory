@@ -56,9 +56,9 @@ class App extends Component {
 
 
       intro = (
-        <ReactFitText compressor = {2}
-                      minFontSize = {40}
-                      maxFontSize = {74}>
+        <ReactFitText compressor={2}
+                      minFontSize={40}
+                      maxFontSize={74}>
           <h1 className='app-intro'>Bozeman Javascript Developers</h1>
         </ReactFitText>
       )
