@@ -54,15 +54,15 @@ class App extends Component {
         );
       }
 
-      if (!user) {
-        intro = (
-          <ReactFitText compressor = {2}
-                        minFontSize = {40}
-                        maxFontSize = {74}>
-            <h1 className='app-intro'>Bozeman Javascript Developers</h1>
-          </ReactFitText>
-        )
-      }
+
+      intro = (
+        <ReactFitText compressor = {2}
+                      minFontSize = {40}
+                      maxFontSize = {74}>
+          <h1 className='app-intro'>Bozeman Javascript Developers</h1>
+        </ReactFitText>
+      )
+
 
       return (
         <div className='app'>
