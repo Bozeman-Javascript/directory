@@ -7,9 +7,12 @@ class Bio extends Component {
 
   render() {
 
-    var key = this.props.key
+    var classes = null
+      , key = this.props.key
       , user = this.props.user
       , name = user.name ? user.name.split(' ') : ['Coder'];
+
+
 
     var styles = {
       backgroundImage: 'linear-gradient(0deg, #ffd131, #ffd131), url(' + user.photoURL + ')'

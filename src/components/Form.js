@@ -74,6 +74,7 @@ class Form extends Component {
             <h1 className='form-header'>Edit your Profile</h1>
           </ReactFitText>
           <div className='form-field'>
+            <label>stackoverflow.com/users/<span>438581</span></label>
             <input className='form-input'
                    ref='stackoverflow'
                    type='text'
@@ -82,6 +83,7 @@ class Form extends Component {
             <i className='form-icon icon-stackoverflow'></i>
           </div>
           <div className='form-field'>
+            <label>linkedin.com/in/<span>username</span></label>
             <input className='form-input'
                    ref='linkedin'
                    type='text'
@@ -90,6 +92,7 @@ class Form extends Component {
             <i className='form-icon icon-linkedin'></i>
           </div>
           <div className='form-field'>
+            <label>Any URL</label>
             <input className='form-input'
                    ref='website'
                    type='text'
@@ -98,6 +101,7 @@ class Form extends Component {
             <i className='form-icon icon-globe'></i>
           </div>
           <div className='form-field form-field--expand'>
+            <label>&nbsp;</label>
             <button className='button button--update'
                     onClick={this._handleUpdate.bind(this)}>
               Update

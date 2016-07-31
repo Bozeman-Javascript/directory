@@ -35,9 +35,27 @@
 .form-field {
   flex-grow: 1;
   width: 100%;
-  padding: 0 20px 10px 20px;
+  padding: 22px 20px 10px 20px;
   box-sizing: border-box;
   position: relative;
+}
+
+.form-field > label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: #b59c1a;
+  text-transform: lowercase;
+}
+
+.form-field > label span {
+  color: #2e2e2c;
+  font-size: 14px;
+  text-transform: lowercase;
 }
 
 .form-input {
@@ -65,7 +83,7 @@
 .form-icon {
   position: absolute;
   right: 25px;
-  top: 0;
+  bottom: 9px;
   opacity: 0.3;
   line-height: 36px;
   font-size: 22px;
