@@ -75,7 +75,7 @@ class Form extends Component {
             <h1 className='form-header'>Edit your Profile</h1>
           </ReactFitText>
           <div className='form-field'>
-            <label>stackoverflow.com/users/<span>438581</span></label>
+            <label>stackoverflow.com/users/<span>#######</span></label>
             <input className='form-input'
                    ref='stackoverflow'
                    type='text'
