@@ -37,7 +37,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `npm run deploy`
 
-Pushes the `gh-pages` branch to Github to make the app available at https://bozeman-javascript.github.io/directory/.
+Pushes the `gh-pages` branch to Github to make the app available at http://directory.bozemanjs.org/.
 
 ### Post-Process CSS
 
