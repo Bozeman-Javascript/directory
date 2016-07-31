@@ -49,6 +49,11 @@ class Bio extends Component {
                 <i className='icon--inline icon-linkedin'></i>
               </a>
             ) : null}
+            {user.twitter ? (
+              <a target='_blank' href={'https://twitter.com/' + user.twitter}>
+                <i className='icon--inline icon-twitter'></i>
+              </a>
+            ) : null}
             {user.website ? (
               <a target='_blank' href={user.website}>
                 <i className='icon--inline icon-globe'></i>

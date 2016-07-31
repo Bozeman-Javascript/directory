@@ -29,6 +29,7 @@ class Form extends Component {
       , name = (user && user.name) ? user.name.split(' ')[0] : ['Coder']
       , stackoverflow = (user && user.stackoverflow ? user.stackoverflow : '')
       , linkedin = (user && user.linkedin ? user.linkedin : '')
+      , twitter = (user && user.twitter ? user.twitter : '')
       , website = (user && user.website ? user.website : '')
       , joinMsg = null
       , formMask = null;
@@ -92,6 +93,15 @@ class Form extends Component {
             <i className='form-icon icon-linkedin'></i>
           </div>
           <div className='form-field'>
+            <label>twitter.com/<span>username</span></label>
+            <input className='form-input'
+                   ref='twitter'
+                   type='text'
+                   defaultValue={twitter}
+                   placeholder='Twitter handle' />
+            <i className='form-icon icon-twitter'></i>
+          </div>
+          <div className='form-field'>
             <label>Any URL</label>
             <input className='form-input'
                    ref='website'
@@ -135,6 +145,7 @@ class Form extends Component {
     Firebase.database().ref('users/' + user.id).update({
       'stackoverflow': this.refs.stackoverflow.value,
       'linkedin': this.refs.linkedin.value,
+      'twitter': this.refs.twitter.value,
       'website': this.refs.website.value
     });
   };

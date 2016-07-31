@@ -26,9 +26,7 @@
   padding-bottom: 100%;
   background-size: cover;
   filter: saturate(90%) grayscale(20%) contrast(120%);
-
   background-color: #ffffff;
-  -webkit-background-blend-mode: multiply, luminosity;
   background-blend-mode: multiply, luminosity;
 }
 
@@ -43,6 +41,10 @@
   position: relative;
   text-align: center;
   border-top: 1px solid rgba(46, 46, 44 , 0.2);
+}
+
+.bio-icons a {
+  padding: 4px 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -70,11 +72,6 @@
   .bio {
     max-width: 14.28%;
     padding: 0 25px 50px 25px;
-  }
-
-  .bio-icons a {
-    display: inline-block;
-    margin: 0 6px;
   }
 }
 

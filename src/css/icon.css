@@ -79,9 +79,9 @@
 .icon--inline {
   color: #2e2e2c;
   opacity: 0.3;
-  font-size: 20px;
+  font-size: 16px;
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 3px;
   text-decoration: none;
   transition: opacity 0.075s linear;
 }
@@ -100,8 +100,16 @@
   transform: scale(2.2);
 }
 
+@media screen and (min-width: 1400px) {
+  .icon--inline {
+    font-size: 20px;
+    margin: 0 4px;
+  }
+}
+
 @media screen and (min-width: 2001px) {
   .icon--inline {
     font-size: 26px;
+    margin: 0 6px;
   }
 }

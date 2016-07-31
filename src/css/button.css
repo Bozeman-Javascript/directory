@@ -54,6 +54,7 @@
 .button--update {
   width: 100%;
   max-width: none;
+  min-width: 100px;
   display: block;
   box-sizing: border-box;
 }

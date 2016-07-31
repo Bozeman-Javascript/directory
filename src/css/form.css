@@ -24,7 +24,7 @@
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -144,7 +144,8 @@
 
   .form-field--expand {
     width: auto;
-    min-width: 50%;
+    min-width: 25%;
+    max-width: 25%;
   }
 
   .form-welcome--center {
@@ -159,6 +160,7 @@
 
   .form-field--expand {
     min-width: 25%;
+    max-width: 25%;
   }
 }
 
