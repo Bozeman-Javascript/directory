@@ -24,7 +24,7 @@ class Logo extends Component {
         </ReactFitText>
         <img src={logo} alt='logo' />
         <div className='bio-icons'>
-            <a href=''>
+            <a target='_blank' href='https://www.meetup.com/Bozeman-JavaScript-Meetup/'>
               <i className='icon--inline icon--big icon-meetup'></i>
             </a>
         </div>
