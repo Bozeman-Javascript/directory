@@ -12,10 +12,8 @@ class Bio extends Component {
       , user = this.props.user
       , name = user.name ? user.name.split(' ') : ['Coder'];
 
-
-
     var styles = {
-      backgroundImage: 'linear-gradient(0deg, #ffd131, #ffd131), url(' + user.photoURL + ')'
+      backgroundImage: 'linear-gradient(#ffd131 0%, #ffd131 100%), url(\'' + user.photoURL + '\')'
     }
 
     return (

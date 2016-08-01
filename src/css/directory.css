@@ -3,6 +3,5 @@
   padding: 70px 10px 0px 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
 }
