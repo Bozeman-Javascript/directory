@@ -64,12 +64,20 @@
 @media screen and (min-width: 600px) {
   .bio {
     max-width: 33.30%;
-    flex: 1 1 33.33%;
+    flex: 1 1 33.30%;
     padding: 0 15px 30px 15px;
   }
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 850px) {
+  .bio {
+    max-width: 25%;
+    flex: 1 1 25%;
+    padding: 0 20px 40px 20px;
+  }
+}
+
+@media screen and (min-width: 1223px) {
   .bio {
     max-width: 19.85%;
     flex: 1 1 19.85%;
@@ -77,18 +85,10 @@
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1641px) {
   .bio {
     max-width: 16.66%;
     flex: 1 1 16.66%;
-    padding: 0 25px 50px 25px;
-  }
-}
-
-@media screen and (min-width: 2001px) {
-  .bio {
-    max-width: 14.28%;
-    flex: 1 1 14.28%;
     padding: 0 25px 50px 25px;
   }
 }
