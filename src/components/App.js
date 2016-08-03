@@ -7,6 +7,7 @@ import reactMixin from 'react-mixin';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Form from './Form.js';
 import Directory from './Directory.js';
+import Footer from './Footer.js';
 import '../css/app.css';
 import '../css/button.css';
 
@@ -66,20 +67,23 @@ class App extends Component {
 
       return (
         <div className='app'>
-          <ReactCSSTransitionGroup key='form'
-                                 component='div'
-                                 transitionName='header'
-                                 transitionEnter={true}
-                                 transitionLeave={true}
-                                 transitionAppear={false}
-                                 transitionEnterTimeout={600}
-                                 transitionLeaveTimeout={200}
-                                 transitionAppearTimeout={0} >
-            {headerLogin}
-            {headerForm}
-          </ReactCSSTransitionGroup>
-          {intro}
-          <Directory users={users} />
+          <div className='app-wrap'>
+            <ReactCSSTransitionGroup key='form'
+                                   component='div'
+                                   transitionName='header'
+                                   transitionEnter={true}
+                                   transitionLeave={true}
+                                   transitionAppear={false}
+                                   transitionEnterTimeout={600}
+                                   transitionLeaveTimeout={200}
+                                   transitionAppearTimeout={0} >
+              {headerLogin}
+              {headerForm}
+            </ReactCSSTransitionGroup>
+            {intro}
+            <Directory users={users} />
+          </div>
+          <Footer />
         </div>
       );
 

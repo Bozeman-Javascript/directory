@@ -24,8 +24,11 @@ class Logo extends Component {
         </ReactFitText>
         <img src={logo} alt='logo' />
         <div className='bio-icons'>
+            <a target='_blank' href='https://github.com/bozeman-javascript'>
+              <i className='icon--inline icon-github'></i>
+            </a>
             <a target='_blank' href='https://www.meetup.com/Bozeman-JavaScript-Meetup/'>
-              <i className='icon--inline icon--big icon-meetup'></i>
+              <i className='icon--inline icon-group'></i>
             </a>
         </div>
       </ReactCSSTransitionGroup>

@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'bozemanjs';
-    src: url('../font/bozemanjs.svg?29369735#bozemanjs') format('svg');
+    src: url('../font/bozemanjs.svg?79549538#bozemanjs') format('svg');
   }
 }
 */
@@ -61,6 +61,8 @@
 .icon-linkedin:before { content: '\e803'; } /* '' */
 .icon-meetup:before { content: '\e804'; } /* '' */
 .icon-down-open:before { content: '\e805'; } /* '' */
+.icon-group:before { content: '\e806'; } /* '' */
+.icon-logout:before { content: '\f02d'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
 .icon-codepen:before { content: '\f32c'; } /* '' */
 

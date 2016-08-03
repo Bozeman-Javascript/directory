@@ -1,0 +1,12 @@
+.footer {
+  display: block;
+  text-align: center;
+  margin: 15px 0 15px 0 !important;
+  line-height: 30px;
+  color: #2e2e2c;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  color: #2e2e2c;
+}

@@ -7,8 +7,7 @@ class Bio extends Component {
 
   render() {
 
-    var classes = null
-      , key = this.props.key
+    var key = this.props.key
       , user = this.props.user
       , name = user.name ? user.name.split(' ') : ['Coder'];
 
