@@ -16,7 +16,7 @@ class App extends Component {
     super(props, context);
 
     this.state = {
-      inBZNJS: false,
+      inBZNJS: true,
       user: null,
       users: {}
     };

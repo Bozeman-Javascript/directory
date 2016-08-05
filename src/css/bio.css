@@ -29,7 +29,12 @@
   background-repeat: no-repeat;
   background-color: #ffffff;
   filter: saturate(90%) grayscale(20%) contrast(120%);
+}
 
+.bio-image-link {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
 }
 
 @supports (background-blend-mode: luminosity) {
@@ -50,7 +55,7 @@
   bottom: 0px;
   clear: both;
   width: 100%;
-  padding: 8px 0;
+  padding: 7px 0;
   background-color: #fdd959;
   position: relative;
   text-align: center;
@@ -58,7 +63,7 @@
 }
 
 .bio-icons a {
-  padding: 4px 0;
+  padding: 3px 0;
 }
 
 @media screen and (min-width: 600px) {

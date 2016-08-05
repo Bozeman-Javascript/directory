@@ -29,7 +29,14 @@ class Bio extends Component {
               {(name[0])}
             </div>
           </ReactFitText>
-          <div style={styles} className='bio-image' ></div>
+          <div style={styles} className='bio-image' >
+            {user.linkedin ? (
+              <a className='bio-image-link'
+                 href={'https://www.linkedin.com/in/' + user.linkedin}
+                 target='_blank'>
+              </a>
+            ) : null}
+          </div>
           <div className='bio-icons'>
             {user.github ? (
             <a target='_blank' href={user.github}>
