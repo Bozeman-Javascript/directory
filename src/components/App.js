@@ -41,7 +41,7 @@ class App extends Component {
           <div className='app-header--login' key='login-comp'>
             <button className='button button--login'
                   onClick={this._handleLogin.bind(this)}>
-              Join <span>via</span> <i className='icon-github'></i>
+              Join / Log In <span>via</span> <i className='icon-github'></i>
             </button>
           </div>
         )
