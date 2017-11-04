@@ -39,6 +39,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 Pushes the `gh-pages` branch to Github to make the app available at http://directory.bozemanjs.org/.
 
+To prevent fast-forward issues the `npm run deploy` script deletes the `gh-pages` remote branch. Deleting the branch removes the custom domain from Github. So after deploying go to [https://github.com/Bozeman-Javascript/directory/settings](https://github.com/Bozeman-Javascript/directory/settings) and re-add the custom domain of `directory.bozemanjs.org`. 
+
 ### Post-Process CSS
 
 This project setup minifies your CSS and adds vendor prefixes to it automatically through [Autoprefixer](https://github.com/postcss/autoprefixer) so you don’t need to worry about it.
